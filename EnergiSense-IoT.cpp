@@ -315,7 +315,7 @@ void loop() {
         digitalWrite(LED_RED, !digitalRead(LED_RED));
       });
 
-      if (wifiManager.autoConnect("{Give a anme to your device AP here}", "{Password here}")) {
+      if (wifiManager.autoConnect("{Give a name to your device AP here}", "{Password here}")) {
         Serial.println("Connected to WiFi!");
         Blynk.config(auth);
         wifiState = WIFI_CONNECTED;
